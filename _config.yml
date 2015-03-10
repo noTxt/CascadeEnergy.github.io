@@ -1,2 +1,3 @@
-source:      _source
-destination: _deploy
+source:      src
+destination: dst
+keep_files: [bower_components]

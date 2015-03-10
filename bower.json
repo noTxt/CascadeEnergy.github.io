@@ -1,0 +1,10 @@
+{
+  "name": "cascade energy",
+  "version": "0.0.0",
+  "homepage": "https://github.com/noTxt/CascadeEnergy.github.io",
+  "authors": [
+    "michael schoenfelder <michaelkschoenfelder@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true
+}
