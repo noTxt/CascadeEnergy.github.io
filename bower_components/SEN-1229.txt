@@ -1,7 +1,0 @@
-trivial placeholder to trigger commit
-
-please go to http://cascadeenergy.github.io/ to view site
-
-and checkout the repo at https://github.com/CascadeEnergy/CascadeEnergy.github.io
-
-future improvements will be pull requests, but I needed an index page before people could visit it
