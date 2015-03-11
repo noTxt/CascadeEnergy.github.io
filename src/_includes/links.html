@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Team</div>
+    <div class="list-group">
+        {% for member in site.data.team %}
+            <a href="https://github.com/{{ member.github }}" class="list-group-item">{{ member.name }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Philosophy</div>
+    <div class="list-group">
+        {% for philosophy in site.data.philosophies %}
+            <a href="{{ philosophy.link }}" class="list-group-item">{{ philosophy.caption }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Stack</div>
+    <div class="list-group">
+        {% for item in site.data.stack %}
+            <a href="{{ item.link }}" class="list-group-item">{{ item.caption }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Open Source</div>
+    <div class="list-group">
+        {% for item in site.data.open_source %}
+            <a href="{{ item.link }}" class="list-group-item">{{ item.caption }}</a>
+        {% endfor %}
+    </div>
+</div>
+
