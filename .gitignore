@@ -1,4 +1,4 @@
 .idea
 .DS_Store
-dst/*
-!dst/bower_components
+_site/*
+!_site/bower_components

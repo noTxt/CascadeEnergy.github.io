@@ -1,3 +1,1 @@
-source:      src
-destination: dst
 keep_files: [bower_components]
