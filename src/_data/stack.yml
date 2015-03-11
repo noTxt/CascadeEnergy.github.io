@@ -1,0 +1,14 @@
+- caption: bootstrap
+  link: http://getbootstrap.com/
+
+- caption: angular
+  link: https://angularjs.org/
+
+- caption: nodejs
+  link: https://nodejs.org/
+
+- caption: lambda
+  link: http://aws.amazon.com/lambda/
+
+- caption: dynamodb
+  link: http://aws.amazon.com/dynamodb/

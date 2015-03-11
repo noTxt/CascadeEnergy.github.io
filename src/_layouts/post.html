@@ -1,0 +1,15 @@
+{% include header.html %}
+<div class="row">
+    <div class="col-sm-1 hidden-xs"></div>
+    <div class="col-xs-12 col-sm-11 col-lg-9">
+        <article class="uk-article">
+            <h1 class="uk-article-title">{{ page.title }}</h1>
+            <p class="uk-article-meta">Written by {{ page.author }} on {{ page.date | date_to_long_string }}.</p>
+            {{ content }}
+        </article>
+    </div>
+    <div class="col-lg-2 hidden-xs hidden-sm hidden-md">
+        {% include links.html %}
+    </div>
+</div>
+{% include footer.html %}
