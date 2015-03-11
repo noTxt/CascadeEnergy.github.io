@@ -1,17 +1,17 @@
-- name: charles
+- name: Charles
   github: cberube
 
-- name: chris
+- name: Chris
   github: chrispcortez
 
-- name: michael
+- name: Michael
   github: noTxt
 
-- name: will
+- name: Will
   github: nackjicholson
 
-- name: jinsy
+- name: Jinsy
   github: jinsyaoommen
 
-- name: nick
+- name: Nick
   github: nwarlen
