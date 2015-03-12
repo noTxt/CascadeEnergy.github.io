@@ -11,22 +11,22 @@ in the cloud which we hope will be maintainable, scalable, and nimble in ways ou
 
 One facet of this new architecture necessitates breaking large files into pieces about 100 
 lines in length to be passed along a series of AWS Lambda functions. Breaking these large files into pieces is
-helps manage the cost of AWS Lambda, because it is billed based on time to run, and memory consumed. The payoff? 
-Completely horizontally scalable data processing without any infrastructure management. It's a good thing, such 
-a good thing!
+helps manage the cost of [AWS Lambda](http://aws.amazon.com/lambda/), because it is billed based on time to run, 
+and memory consumed. The payoff? Completely horizontally scalable data processing without any infrastructure management.
+It's a good thing, such a good thing!
 
 This is the part of the "Digest" system, as we call it, that I've been working on recently. Before we can send
 data along a series of Lambda functions, we needed to build a tool that did the "chunking" of large files. We
-call it the "digest-chunker", and we chose to implement it in NodeJS. This is how it went.
+call it the "digest-chunker", and we chose to implement it in [NodeJS](https://nodejs.org/). This is how it went.
  
 #### Minimal Implementation
 
-I wanted it to pick up a csv file stored in Amazon S3, streams it through a csv parser (`$ npm install csv`), take 
-100 lines, and put them in a message to pass along. I decided to develop and test with a file I thought was fairly 
-large in size, 25,000 lines of data. Not the top end of file size our clients and energy management team members would
-like to work with, but it's nothing to slouch at either. I had a working version in a few days, and was pretty pleased
-with myself. I ran a demo of it to the rest of the team to prove that I hadn't just been phoning it in. To which their 
-reply was:
+I wanted it to pick up a csv file stored in [Amazon S3](http://aws.amazon.com/s3/), streams it through a csv parser 
+(`$ npm install csv`), take 100 lines, and put them in a message to pass along. I decided to develop and test with a
+file I thought was fairly large in size, 25,000 lines of data. Not the top end of file size our clients and energy
+management team members would like to work with, but it's nothing to slouch at either. I had a working version in a 
+few days, and was pretty pleased with myself. I ran a demo of it to the rest of the team to prove that I hadn't just 
+been phoning it in. To which their reply was:
 
 > Yeah...But, can it do a ten million line file?
 
