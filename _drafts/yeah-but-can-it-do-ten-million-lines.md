@@ -84,7 +84,7 @@ given time.
 
 The three components below broadly describe our solution to the problem.
 
-*Chunk Manager*
+**Chunk Manager**
 
 Responsibilities:
 
@@ -93,13 +93,13 @@ Responsibilities:
 - Decrement that count every time an "active send" completes.
 - Constantly notify a *Chunk Mediator* of the "active send" count anytime it changes.
     
-*Chunk Mediator*
+**Chunk Mediator**
 
 Responsibilities:
 
 - Relay the "active send" count between the *Chunk Mediator* and the *Stream Manager*
     
-*Stream Manager*
+**Stream Manager**
 
 Responsibilities:
 
