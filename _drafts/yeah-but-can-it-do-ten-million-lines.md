@@ -98,7 +98,7 @@ Responsibilities:
 
 Responsibilities:
 
-- Relay the "active send" count between the *Chunk Mediator* and the *Stream Manager*
+- Relay the "active send" count between the *Chunk Manager* and the *Stream Manager*
     
 **Stream Manager**
 
