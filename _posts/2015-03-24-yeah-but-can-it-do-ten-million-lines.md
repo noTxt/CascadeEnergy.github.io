@@ -2,6 +2,7 @@
 layout: post
 title: Yeah...but can it do ten million lines?
 author: Will Vaughn
+comments: true
 ---
 
 Here at Cascade Energy, the dev team is all hands on deck, engineering a new pipeline for receiving energy data to
